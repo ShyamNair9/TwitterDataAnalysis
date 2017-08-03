@@ -1,0 +1,1 @@
+barplot(frq, names.arg = c("#EVEARS","#CHEWHU","#CRYLEI","#WATSTO","#WBANOR","#SWAAVL","#NEWSUN","#SOULIV","#MCIMUN","#TOTBOU"), main = "MATCH POPULARITY-GAMEWEEK 31", xlab = "Fixtures", ylab = "Tweetcount",col ="black", cex.main=0.9, cex.names = 0.8, font.lab=2)

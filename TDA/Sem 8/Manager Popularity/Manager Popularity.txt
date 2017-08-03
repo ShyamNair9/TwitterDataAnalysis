@@ -1,0 +1,175 @@
+<!-- BarChart generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Fri Apr 22 02:56:33 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataBarChartID21d4314046dc () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "ArseneWenger(Arsenal)",
+3000 
+],
+[
+ "EddieHowe(Bournemouth)",
+23 
+],
+[
+ "MarkHughes(StokeCity)",
+67 
+],
+[
+ "ManuelPellegrini(Mancity)",
+1500 
+],
+[
+ "RobertoMartinez(Everton)",
+252 
+],
+[
+ "MauricioPochettino(Spurs)",
+400 
+],
+[
+ "RonaldKoeman(Southampton)",
+85 
+],
+[
+ "LouisVanGaal(Manutd)",
+3100 
+],
+[
+ "TonyPulis(WestBrom)",
+32 
+],
+[
+ "AlanPardew(CrystalPalace)",
+77 
+],
+[
+ "AlexNeil(Norwich)",
+34 
+],
+[
+ "QuiqueSanchezFLores(Watford)",
+6 
+],
+[
+ "SlavenBilic(Westham)",
+178 
+],
+[
+ "ClaudioRanieri(Leicester)",
+264 
+],
+[
+ "JurgenKlopp(Liverpool)",
+3425 
+],
+[
+ "SamAllardyce(Sunderland)",
+68 
+],
+[
+ "GuusHiddink(Chelsea)",
+70 
+],
+[
+ "FrancescoGuidolin(Swansea)",
+17 
+],
+[
+ "RafaelBenitez(Newcastle)",
+132 
+],
+[
+ "EricBlack(AstonVilla)",
+51 
+] 
+];
+data.addColumn('string','Managers');
+data.addColumn('number','HashtagCount');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartBarChartID21d4314046dc() {
+var data = gvisDataBarChartID21d4314046dc();
+var options = {};
+options["allowHtml"] = true;
+options["width"] =   1300;
+options["height"] =    700;
+options["vAxis"] = {title:'Managers'};
+options["hAxis"] = {title:'Tweetcount'};
+
+
+    var chart = new google.visualization.BarChart(
+    document.getElementById('BarChartID21d4314046dc')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartBarChartID21d4314046dc);
+})();
+function displayChartBarChartID21d4314046dc() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBarChartID21d4314046dc"></script>
+
+
+<!-- divChart -->
+  
+<div id="BarChartID21d4314046dc" 
+  style="width: 1300; height: 700;">
+</div>
+
